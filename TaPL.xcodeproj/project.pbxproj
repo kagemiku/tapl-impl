@@ -26,6 +26,7 @@
 		10F9D16C2392683E003853F2 /* FileInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9D16A2392683E003853F2 /* FileInformation.swift */; };
 		10F9D16D2392683E003853F2 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9D16B2392683E003853F2 /* Error.swift */; };
 		10F9D16F23926881003853F2 /* TermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9D16E23926881003853F2 /* TermTests.swift */; };
+		10F9D1742393F488003853F2 /* EvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9D1732393F488003853F2 /* EvaluatorTests.swift */; };
 		OBJ_31 /* TaPLImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* TaPLImplTests.swift */; };
 		OBJ_32 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_34 /* TaPLImpl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TaPL::TaPLImpl::Product" /* TaPLImpl.framework */; };
@@ -55,6 +56,7 @@
 		10F9D16A2392683E003853F2 /* FileInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInformation.swift; sourceTree = "<group>"; };
 		10F9D16B2392683E003853F2 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		10F9D16E23926881003853F2 /* TermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermTests.swift; sourceTree = "<group>"; };
+		10F9D1732393F488003853F2 /* EvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatorTests.swift; sourceTree = "<group>"; };
 		OBJ_12 /* TaPLImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaPLImplTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				OBJ_13 /* XCTestManifests.swift */,
 				OBJ_12 /* TaPLImplTests.swift */,
 				10F9D16E23926881003853F2 /* TermTests.swift */,
+				10F9D1732393F488003853F2 /* EvaluatorTests.swift */,
 			);
 			name = TaPLImplTests;
 			path = Tests/TaPLImplTests;
@@ -248,6 +251,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_31 /* TaPLImplTests.swift in Sources */,
+				10F9D1742393F488003853F2 /* EvaluatorTests.swift in Sources */,
 				OBJ_32 /* XCTestManifests.swift in Sources */,
 				10F9D16F23926881003853F2 /* TermTests.swift in Sources */,
 			);

@@ -10,8 +10,7 @@ import Foundation
 
 typealias FI = FileInformation
 
-indirect enum Term {
-
+indirect enum Term: Equatable {
     case `true`(FI)
     case `false`(FI)
     case `if`(FI, Term, Term, Term)

@@ -8,4 +8,12 @@
 
 import Foundation
 
-struct FileInformation { }
+struct FileInformation: Equatable {
+
+    let line: Int
+
+    init(line: Int = 0) {
+        self.line = line
+    }
+
+}
