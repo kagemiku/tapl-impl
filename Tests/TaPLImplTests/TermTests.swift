@@ -14,13 +14,27 @@ final class TermTests: XCTestCase {
 
     func testIsVal() {
         let vTrue = Term.true(fi)
-        XCTAssertTrue(vTrue.isVal())
+        XCTAssertTrue(vTrue.isVal)
 
         let vFalse = Term.false(fi)
-        XCTAssertTrue(vFalse.isVal())
+        XCTAssertTrue(vFalse.isVal)
 
         let vZero = Term.zero(fi)
-        XCTAssertTrue(vZero.isVal())
+        XCTAssertTrue(vZero.isVal)
+
+        let vSucc = Term.succ(fi, vZero)
+        XCTAssertTrue(vSucc.isVal)
+    }
+
+    func testIsNumericVal() {
+        let vZero = Term.zero(fi)
+        XCTAssertTrue(vZero.isNumericVal)
+
+        let vSucc = Term.succ(fi, vZero)
+        XCTAssertTrue(vSucc.isNumericVal)
+
+        let vSuccSucc = Term.succ(fi, vSucc)
+        XCTAssertTrue(vSuccSucc.isNumericVal)
     }
 
 

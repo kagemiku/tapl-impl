@@ -36,7 +36,7 @@ struct Evaluator {
             }
         case .pred(_, .zero):
             return .zero(dummyInfo)
-        case let .pred(_, .succ(_, t1)) where t1.isNumericVal():
+        case let .pred(_, .succ(_, t1)) where t1.isNumericVal:
             return t1
         case let .pred(fi, t1):
             do {
@@ -47,7 +47,7 @@ struct Evaluator {
             }
         case .isZero(_, .zero):
             return .true(dummyInfo)
-        case let .isZero(_, .succ(_, t1)) where t1.isNumericVal():
+        case let .isZero(_, .succ(_, t1)) where t1.isNumericVal:
             return .false(dummyInfo)
         case let .isZero(fi, t1):
             do {

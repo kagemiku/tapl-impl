@@ -24,23 +24,23 @@ indirect enum Term {
 
 extension Term {
 
-    func isVal() -> Bool {
+    var isVal: Bool {
         switch self {
         case .true, .false:
             return true
-        case let t where t.isNumericVal():
+        case let t where t.isNumericVal:
             return true
         default:
             return false
         }
     }
 
-    func isNumericVal() -> Bool {
+        var isNumericVal: Bool {
         switch self {
         case .zero:
             return true
         case .succ(_, let t1):
-            return t1.isNumericVal()
+            return t1.isNumericVal
         default:
             return false
         }
