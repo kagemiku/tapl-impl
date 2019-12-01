@@ -34,7 +34,7 @@ extension Term {
         }
     }
 
-        var isNumericVal: Bool {
+    var isNumericVal: Bool {
         switch self {
         case .zero:
             return true
